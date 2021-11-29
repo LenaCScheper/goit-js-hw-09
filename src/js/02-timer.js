@@ -90,3 +90,17 @@ function updateCountdown({ days, hours, minutes, seconds }) {
   cndwnMinutes.textContent = `${minutes}`;
   cndwnSeconds.textContent = `${seconds}`;
 }
+timerMarkup.style.display = 'flex';
+
+for (let field of fields) {
+  field.style.marginRight = '15px';
+  field.style.textAlign = 'center';
+  field.style.fontSize = '50px';
+  field.style.fontWeight = '500';
+}
+
+for (let label of labels) {
+  label.style.display = 'block';
+  label.style.fontSize = '36px';
+  label.style.fontWeight = '400';
+}
